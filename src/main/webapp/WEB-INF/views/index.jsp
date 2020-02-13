@@ -10,26 +10,21 @@
 <style type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-    <div style="text-align:center">
+<body class="text-center">
 	<h1>
-	База данных загруженных файлов.<br>
+	<br>База данных загруженных файлов.<br><br>
 	</h1>
-	</div>
 
-    <form method="get" action="filesdataprint">
-      <table cellspacing="50">
-        <tr>
-          <td>Имя пользователя:</td>
-          <td><input name="userName" type="text"/></td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <button type="submit">Загрузить<br>данные</button>
-          </td>
-        </tr>
-      </table>
+    <form method="get" action="filesdataprint" class="form-signin">
+      <div class="w-25 p-3">
+        <input type="text" class="form-control" name="userName" placeholder="Имя клиента">
+      </div>
+      <div class="w-25 p-3">
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Загрузить данные</button>
+      </div>
     </form>
+
 </body>
 </html>
